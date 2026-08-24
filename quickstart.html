@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quickstart · Open Forest Harness</title><meta name="description" content="Install and first run of OFH">
+<meta property="og:title" content="Quickstart · Open Forest Harness"><meta property="og:image" content="https://naudentx18.github.io/ofh/assets/social-preview.png">
+<link rel="icon" href="assets/logo.png"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<nav><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="OFH logo">Open Forest Harness</a>
+<div class="links" id="ofh-menu"><a class="" href="index.html">Home</a><a class="on" href="quickstart.html">Quickstart</a><a class="" href="configuration.html">Configuration</a><a class="" href="architecture.html">Architecture</a><a class="" href="roadmap.html">Roadmap</a><a class="" href="security.html">Security</a></div>
+<a class="cta-sm" href="https://github.com/NaustudentX18/ofh/releases/latest" target="_blank">Download</a>
+<button class="burger" id="ofh-burger" aria-label="Toggle menu" aria-expanded="false" onclick="ofhToggle()"><span></span><span></span><span></span></button>
+</div></nav><div class="page-hero"><div class="wrap"><h1>🚀 Quickstart</h1><p>Install OFH and run your first agent in a few minutes.</p></div></div>
+<div class="content">
+  <div class="box"><b>1 · Install the APK</b> from <a href="https://github.com/naudentx18/ofh/releases/latest" target="_blank">Releases</a>.</div>
+  <div class="box"><b>2 · Verify the download</b> (recommended) — compare against the release's <code>SHA256SUMS</code>:<pre>shasum -a 256 OFH-v0.2.0.apk</pre></div>
+  <div class="box"><b>3 · First launch</b> → the provider <b>setup wizard</b> appears.</div>
+  <div class="box"><b>4 · Pick a provider</b><ul>
+    <li>Cloud (Ollama Cloud / MiniMax / Z.AI / Qwen / DeepSeek / OpenAI) → paste your API key.</li>
+    <li><b>Ollama Local</b> → no key; base URL defaults to <code>http://127.0.0.1:11434/v1</code>.</li>
+    <li><b>Custom</b> → any OpenAI-compatible base URL + model.</li></ul></div>
+  <div class="box"><b>5 · Save</b> and start chatting. Switch providers/models anytime from the chat header.</div>
+  <h2>Zero-key smoke test</h2><p>Run a local Ollama, pick <b>Ollama Local</b>, and ask <em>"what's the newest iPhone and how much?"</em> — it streams an answer and runs a real <code>web_search</code> tool call.</p>
+</div>
+<footer><div class="wrap">
+<div class="about"><h4>🌲 Open Forest Harness</h4><p>An independent, provider-agnostic Android agent harness. Built from scratch, local-first, open source.</p></div>
+<div><h4>Product</h4><ul><li><a href="quickstart.html">Quickstart</a></li><li><a href="configuration.html">Configuration</a></li><li><a href="architecture.html">Architecture</a></li><li><a href="roadmap.html">Roadmap</a></li></ul></div>
+<div><h4>Security</h4><ul><li><a href="security.html">Security</a></li><li><a href="https://github.com/naudentx18/ofh/blob/main/SECURITY.md" target="_blank">SECURITY.md</a></li><li><a href="https://github.com/naudentx18/ofh/blob/main/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct</a></li></ul></div>
+<div><h4>Source</h4><ul><li><a href="https://github.com/naudentx18/ofh" target="_blank">GitHub</a></li><li><a href="https://github.com/naudentx18/ofh/releases" target="_blank">Releases</a></li><li><a href="https://github.com/naudentx18/ofh/blob/main/ROADMAP.md" target="_blank">ROADMAP.md</a></li><li><a href="https://github.com/naudentx18/ofh/blob/main/CHANGELOG.md" target="_blank">Changelog</a></li></ul></div>
+</div><div class="bot">MIT License · Made with a cartoon goat 🐐 · github.com/naudentx18/ofh</div></footer>
+<script>function ofhToggle(){var m=document.getElementById('ofh-menu'),b=document.getElementById('ofh-burger');var o=m.classList.toggle('open');if(b)b.setAttribute('aria-expanded',o);}document.querySelectorAll('#ofh-menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('ofh-menu').classList.remove('open');});});</script>
+</body></html>

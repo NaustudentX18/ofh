@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Roadmap · Open Forest Harness</title><meta name="description" content="OFH roadmap">
+<meta property="og:title" content="Roadmap · Open Forest Harness"><meta property="og:image" content="https://naudentx18.github.io/ofh/assets/social-preview.png">
+<link rel="icon" href="assets/logo.png"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<nav><div class="wrap">
+<a class="brand" href="index.html"><img src="assets/logo.png" alt="OFH logo">Open Forest Harness</a>
+<div class="links" id="ofh-menu"><a class="" href="index.html">Home</a><a class="" href="quickstart.html">Quickstart</a><a class="" href="configuration.html">Configuration</a><a class="" href="architecture.html">Architecture</a><a class="" href="roadmap.html">Roadmap</a><a class="" href="security.html">Security</a></div>
+<a class="cta-sm" href="https://github.com/NaustudentX18/ofh/releases/latest" target="_blank">Download</a>
+<button class="burger" id="ofh-burger" aria-label="Toggle menu" aria-expanded="false" onclick="ofhToggle()"><span></span><span></span><span></span></button>
+</div></nav><div class="page-hero"><div class="wrap"><h1>🗺️ Roadmap</h1><p>Prioritized plan from a 5-agent research sweep.</p></div></div>
+<div class="content">
+  <h2>Recommended build order</h2>
+  <div class="box"><h3>Phase 0 · Prove it runs</h3><p>On-device smoke test vs a live provider; get CI green.</p></div>
+  <div class="box"><h3>Phase 1 · Trust &amp; reliability</h3><p>Permission gates, provider fallback router, token budget, hooks.</p></div>
+  <div class="box"><h3>Phase 2 · Delight</h3><p>Streaming polish, voice input (STT), markdown/code, history + edit/retry.</p></div>
+  <div class="box"><h3>Phase 3 · Memory</h3><p>On-device vector + keyword retrieval, embeddings, conversation compression.</p></div>
+  <div class="box"><h3>Phase 4 · Proactive &amp; multi-agent</h3><p>Background curator, cron, sub-agents, MCP client, gateway.</p></div>
+  <div class="box"><h3>Phase 5 · Scale</h3><p>More providers, multimodal, widgets, Play-store readiness.</p></div>
+  <p>The full prioritized backlog lives in <a href="https://github.com/naudentx18/ofh/blob/main/ROADMAP.md" target="_blank">ROADMAP.md</a>.</p>
+</div>
+<footer><div class="wrap">
+<div class="about"><h4>🌲 Open Forest Harness</h4><p>An independent, provider-agnostic Android agent harness. Built from scratch, local-first, open source.</p></div>
+<div><h4>Product</h4><ul><li><a href="quickstart.html">Quickstart</a></li><li><a href="configuration.html">Configuration</a></li><li><a href="architecture.html">Architecture</a></li><li><a href="roadmap.html">Roadmap</a></li></ul></div>
+<div><h4>Security</h4><ul><li><a href="security.html">Security</a></li><li><a href="https://github.com/naudentx18/ofh/blob/main/SECURITY.md" target="_blank">SECURITY.md</a></li><li><a href="https://github.com/naudentx18/ofh/blob/main/CODE_OF_CONDUCT.md" target="_blank">Code of Conduct</a></li></ul></div>
+<div><h4>Source</h4><ul><li><a href="https://github.com/naudentx18/ofh" target="_blank">GitHub</a></li><li><a href="https://github.com/naudentx18/ofh/releases" target="_blank">Releases</a></li><li><a href="https://github.com/naudentx18/ofh/blob/main/ROADMAP.md" target="_blank">ROADMAP.md</a></li><li><a href="https://github.com/naudentx18/ofh/blob/main/CHANGELOG.md" target="_blank">Changelog</a></li></ul></div>
+</div><div class="bot">MIT License · Made with a cartoon goat 🐐 · github.com/naudentx18/ofh</div></footer>
+<script>function ofhToggle(){var m=document.getElementById('ofh-menu'),b=document.getElementById('ofh-burger');var o=m.classList.toggle('open');if(b)b.setAttribute('aria-expanded',o);}document.querySelectorAll('#ofh-menu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('ofh-menu').classList.remove('open');});});</script>
+</body></html>
