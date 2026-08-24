@@ -161,6 +161,9 @@ Shipped so far: **v0.1.0** (harness core + streaming) · **v0.2.0** (wizard, swi
 
 ## 📚 Docs & community
 
+- 🌐 **Live site:** [naustudentx18.github.io/ofh](https://naustudentx18.github.io/ofh/)
+- [**Quickstart**](#-quickstart) · [**Architecture**](docs/ARCHITECTURE.md) · [**Roadmap**](ROADMAP.md)
+
 - [**Quickstart**](#-quickstart) · [**Architecture**](docs/ARCHITECTURE.md) · [**Roadmap**](ROADMAP.md)
 - [**Changelog**](CHANGELOG.md) · [**Contributing**](CONTRIBUTING.md) · [**Security**](SECURITY.md) · [**Code of Conduct**](CODE_OF_CONDUCT.md)
 - On-device smoke-test checklist: [**SMOKE-TEST.md**](docs/SMOKE-TEST.md)
