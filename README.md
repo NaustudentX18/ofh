@@ -138,10 +138,16 @@ assets/web/index.html      # dark forest-green chat UI
 
 ## 🗺️ Roadmap
 
-- **0.1.0** ✅ provider-agnostic harness skeleton + streaming
-- **0.2.0** ✅ wizard, provider switcher, tool-call rendering, 120s budget, memory, skills
-- **0.3.0** 🔜 on-device verification pass, summarized search results, tool-output limits
-- **1.0.0** personality presets, multimodal, background curator, MCP support
+See the full prioritized plan in [**ROADMAP.md**](ROADMAP.md) — the result of a 5-agent research sweep. Recommended build order:
+
+- **Phase 0 · Prove it runs** — on-device smoke test vs a live provider; get CI green. *(the gate)*
+- **Phase 1 · Trust & reliability** — permission gates, provider fallback router, token budget, hooks.
+- **Phase 2 · Delight** — streaming polish, voice input (STT), markdown/code, history + edit/retry.
+- **Phase 3 · Memory** — on-device vector + keyword retrieval, embeddings, conversation compression.
+- **Phase 4 · Proactive & multi-agent** — background curator, cron, sub-agents, MCP client, gateway.
+- **Phase 5 · Scale** — more providers, multimodal, widgets, Play-store readiness.
+
+Shipped so far: **v0.1.0** (harness core + streaming) · **v0.2.0** (wizard, switcher, tools, budget, memory, skills).
 
 ---
 
