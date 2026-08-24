@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.OFH" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#0B3D2E</item>
+        <item name="android:navigationBarColor">#0B3D2E</item>
+    </style>
+</resources>

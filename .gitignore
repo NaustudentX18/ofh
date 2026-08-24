@@ -1,0 +1,20 @@
+# Gradle / Android
+.gradle/
+build/
+app/build/
+*.iml
+local.properties
+.idea/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+!/dist/README.md
+
+# secrets — never commit the signing keystore
+release.keystore
+
+# generated-asset scripts (keep the PNGs they produce)
+gen_assets.py
+gen_screens.py
