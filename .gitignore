@@ -18,3 +18,4 @@ release.keystore
 # generated-asset scripts (keep the PNGs they produce)
 gen_assets.py
 gen_screens.py
+gen_banner.py

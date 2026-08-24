@@ -9,8 +9,9 @@
   <img alt="Android" src="https://img.shields.io/badge/Android-min%2024-3ACF73?logo=android&logoColor=white" />
   <img alt="Version" src="https://img.shields.io/badge/version-0.2.0-2BAE62" />
   <img alt="Providers" src="https://img.shields.io/badge/providers-8-2BAE62" />
-  <img alt="Tests" src="https://img.shields.io/badge/tests-3%2F3%20pass-57D98A" />
-  <img alt="Build" src="https://img.shields.io/badge/build-passing-57D98A" />
+  <img alt="CI" src="https://github.com/NaustudentX18/ofh/actions/workflows/ci.yml/badge.svg" />
+  <img alt="Tests" src="https://img.shields.io/badge/unit_tests-3%2F3-57D98A" />
+  <img alt="Issues" src="https://img.shields.io/github/issues/NaustudentX18/ofh" />
   <img alt="License" src="https://img.shields.io/badge/license-MIT-45c37d" />
 </p>
 
@@ -18,6 +19,10 @@
   <img src="assets/screenshot-chat.png" width="320" alt="OFH chat screenshot" />
   <img src="assets/screenshot-wizard.png" width="320" alt="OFH setup wizard screenshot" />
   <img src="assets/screenshot-switcher.png" width="320" alt="OFH provider switcher screenshot" />
+</p>
+
+<p align="center">
+  <img src="assets/social-preview.png" width="880" alt="OFH — Open Forest Harness banner" />
 </p>
 
 ---
@@ -56,13 +61,18 @@
 ## 🚀 Quickstart
 
 1. **Install the APK** — grab the latest from the [Releases](../../releases) page (or build it yourself, below).
-2. **First launch** → the **setup wizard** appears.
-3. **Pick a provider**:
+2. **Verify the download** (optional but recommended) — compare the SHA-256 against the `SHA256SUMS` file in the release:
+   ```sh
+   shasum -a 256 OFH-v0.2.0.apk
+   # 6d5ec76d2d89c545025cea1d11a8bfbb176fa20d8083860d47f5ac4dfd3362ae
+   ```
+3. **First launch** → the **setup wizard** appears.
+4. **Pick a provider**:
    - 🌩️ **Ollama Cloud / MiniMax / Z.AI / Qwen / DeepSeek / OpenAI** → paste your API key.
    - 🏠 **Ollama Local** → no key needed; base URL defaults to `http://127.0.0.1:11434/v1`.
    - 🧩 **Custom** → enter any OpenAI-compatible base URL + model (+ key, optional).
-4. **Save** and start chatting.
-5. Switch providers/models anytime from the **chat header**.
+5. **Save** and start chatting.
+6. Switch providers/models anytime from the **chat header**.
 
 > Zero-key smoke test: run a local Ollama, pick **Ollama Local**, and ask "what's the newest iPhone and how much?" — it will stream an answer and run a `web_search` tool call.
 
@@ -140,6 +150,14 @@ assets/web/index.html      # dark forest-green chat UI
 - **Your API key lives on-device** in `~/.ofh/`.credentials.yaml — never baked into the APK, never uploaded anywhere.
 - All requests go **directly** to the provider you chose. No middle server.
 - Local-first: with Ollama Local, **nothing** leaves your network.
+
+---
+
+## 📚 Docs & community
+
+- [**Quickstart**](#-quickstart) · [**Architecture**](docs/ARCHITECTURE.md) · [**Roadmap**](ROADMAP.md)
+- [**Changelog**](CHANGELOG.md) · [**Contributing**](CONTRIBUTING.md) · [**Security**](SECURITY.md) · [**Code of Conduct**](CODE_OF_CONDUCT.md)
+- On-device smoke-test checklist: [**SMOKE-TEST.md**](docs/SMOKE-TEST.md)
 
 ---
 
